@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nenye Beauty | Premium Hair Vendor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: #fff; color: #222; line-height: 1.6; }
+    header { background: #000; color: #fff; padding: 20px 60px; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { font-size: 28px; letter-spacing: 2px; }
+    nav a { color: #fff; margin-left: 25px; text-decoration: none; font-weight: 500; }
+    nav a:hover { opacity: 0.7; }
+
+    .hero { height: 90vh; background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; padding: 20px; }
+    .hero h2 { font-size: 48px; margin-bottom: 15px; }
+    .hero p { font-size: 18px; max-width: 600px; margin: auto; }
+    .btn { display: inline-block; margin-top: 25px; padding: 14px 40px; background: #c9a24d; color: #000; text-decoration: none; font-weight: 600; border-radius: 30px; }
+    .btn:hover { opacity: 0.85; }
+
+    section { padding: 80px 60px; }
+    .section-title { text-align: center; margin-bottom: 50px; }
+    .section-title h3 { font-size: 36px; margin-bottom: 10px; }
+    .section-title p { color: #555; }
+
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+    .product { border: 1px solid #eee; border-radius: 15px; overflow: hidden; text-align: center; }
+    .product img { width: 100%; height: 300px; object-fit: cover; }
+    .product h4 { margin: 15px 0 5px; }
+    .product p { color: #777; margin-bottom: 15px; }
+
+    .about { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center; }
+    .about img { width: 100%; border-radius: 20px; }
+
+    .contact { background: #f9f9f9; }
+    form { max-width: 600px; margin: auto; }
+    input, textarea { width: 100%; padding: 14px; margin-bottom: 15px; border-radius: 8px; border: 1px solid #ccc; }
+    button { width: 100%; padding: 14px; background: #000; color: #fff; border: none; border-radius: 30px; font-size: 16px; cursor: pointer; }
+    button:hover { opacity: 0.85; }
+
+    footer { background: #000; color: #fff; text-align: center; padding: 25px; }
+
+    @media (max-width: 768px) {
+      header { flex-direction: column; }
+      nav { margin-top: 15px; }
+      .hero h2 { font-size: 34px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Nenye  BEAUTY</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <h2>Luxury Hair. Flawless Confidence.</h2>
+    <p>Nenye Beauty provides premium-quality human hair extensions designed for queens who demand excellence.</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </div>
+</section>
+
+<section id="products">
+  <div class="section-title">
+    <h3>Our Best Sellers</h3>
+    <p>Only the finest textures and lengths</p>
+  </div>
+  <div class="products">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1600180758890-6ec9c1c7d63c" alt="Body Wave Hair">
+      <h4>Body Wave</h4>
+      <p>Soft • Natural • Full</p>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1598514982695-35e31d4c1fa5" alt="Straight Hair">
+      <h4>Straight</h4>
+      <p>Sleek • Smooth • Timeless</p>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1581349486922-9d3b1c9f2041" alt="Curly Hair">
+      <h4>Curly</h4>
+      <p>Defined • Bouncy • Bold</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-title">
+    <h3>About Nenye Beauty</h3>
+    <p>Where quality meets beauty</p>
+  </div>
+  <div class="about">
+    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="About Terms Beauty">
+    <div>
+      <p>Nenye Beauty is a premium hair vendor committed to providing top-tier human hair sourced ethically and crafted to last. Our mission is to empower confidence, elegance, and individuality through luxury hair solutions.</p>
+      <p>Whether you're a stylist or a beauty lover, Nenye Beauty is your trusted plug for flawless hair.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="section-title">
+    <h3>Contact Us</h3>
+    <p>We’d love to hear from you</p>
+  </div>
+  <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea rows="5" placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2026 Nenye Beauty. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
